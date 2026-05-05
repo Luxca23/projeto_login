@@ -1,0 +1,17 @@
+/* Variaveis globais css */
+
+:root{
+    /* Fonte */
+    --fonte-padrao: "Poppins", sans-serif;
+
+
+
+    /* Cor fonte */
+    --cor-fonte1: rgb(39, 39, 39);
+    --cor-fonte2: rgb(35, 148, 1);
+
+
+    /* Cores paletas */
+    --cor-1: #00a500;
+
+}

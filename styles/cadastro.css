@@ -1,0 +1,150 @@
+@import url(style.css);
+@import url(global.css);
+
+
+main .cadastro1{
+    background: url("../assets/images/nature-med.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 1px solid red; */
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 20px 50px;
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.603);
+    /* padding-right: auto; */
+
+    & form{
+        width:100%;
+        max-width: 500px;
+        background-color: rgba(29, 65, 0, 0.315);
+        height: 100%;
+        border-radius: 30px;
+        backdrop-filter: blur(4px);
+        display: flex;
+        flex-direction: column;
+        /* row-gap: 30px; */
+        padding: 0 15px 5px 15px;
+        box-shadow: -5px -5px 20px rgb(0, 0, 0);
+
+        & .caixalogin{
+            font-size: 1.5rem;
+            font-family: var(--fonte-padrao);
+            font-weight: 600;
+            padding-top: 10px;
+            text-align: center;
+            color:var(--cor-fonte1);
+            /* background-color: rgb(231, 255, 231); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.cadastro1 form .caixalogin .logo{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2rem;
+    width: 2rem;
+}
+
+.cadastro1 form .arealogin{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    & .container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        row-gap: 20px;
+    }
+
+    & .container .caixaemail, & .container .caixasenha{
+        width:100%;
+        /* border: 1px solid yellow; */
+    }
+
+    & .mensagem h2{
+        color:var(--cor-fonte1);
+        text-shadow: 1px 1px 4px rgb(126, 126, 126);
+
+        & span{
+            color: transparent;
+            text-shadow: 0px 0px 1px var(--cor-1);
+        }
+    }
+
+    & .mensagem{
+        display: flex;
+        justify-content: center;
+    }
+
+    & .caixabotao{
+        width: 100%;
+        /* margin-top: 30px; */
+        display: flex;
+        justify-content: center;
+
+        & .botaologin{
+            padding:5px 60px;
+            font-family: var(--fonte-padrao);
+            font-weight: 700;
+            border-radius: 7px;
+            border: 1px solid wheat;
+            background-color: transparent;
+            color:rgba(245, 222, 179, 0.527);
+            transition: 0.3s ease-in-out;
+
+            &:hover{
+                cursor: pointer;
+                scale: 1.2;
+                border: 1px solid rgba(245, 222, 179, 0.288);
+                box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.603);
+                color:wheat;
+            }
+        }
+    }
+
+    & .caixainfo{
+        width:100%;
+        height: 100%;
+        max-height: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & a{
+            text-decoration: none;
+            color:var(--cor-fonte2);
+            font-family: var(--fonte-padrao);
+            /* font-weight: 500; */
+            font-size: 0.8rem;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+}
+
+.cadastro1 form fieldset{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    border:none
+}
+
+p{
+    font-family: var(--fonte-padrao);
+    color:var(--cor-fonte2);
+    font-weight: 400;
+    text-shadow: 0px 0px 1px greenyellow;
+    letter-spacing: 2px;
+    width: min-content;
+}
