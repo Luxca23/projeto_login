@@ -36,6 +36,11 @@ input[type="email"]{
     &::placeholder{
         color:rgba(245, 222, 179, 0.377);
     }
+
+    &:invalid{
+        border: 1px solid rgb(204, 0, 0, 0.450)
+    }
+
 }
 
 input[type="password"]{
@@ -52,6 +57,11 @@ input[type="password"]{
     &::placeholder{
         color:rgba(245, 222, 179, 0.377);
     }
+
+    &:invalid{
+        border: 1px solid rgb(204, 0, 0, 0.450)
+    }
+
 }
 
 input[type="email"]:focus, input[type="password"]:focus{
