@@ -82,6 +82,18 @@ input[type="email"]:focus, input[type="password"]:focus{
     }
 
     main .cadastro1{
-        padding: 10px 0;
+        padding:0;
+        border-radius: 0;
+        
+        & form{
+            border-radius: 0;
+            width: 100%;
+        }
     }
+
+    .cadastro1 form .arealogin {
+    & .mensagem h2 {
+        font-size: 1rem;
+    }
+}
 }
