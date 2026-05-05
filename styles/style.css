@@ -1,4 +1,6 @@
 @import url(global.css);
+@import url(propaganda.css);
+@import url(cadastro.css);
 
 *{
     padding: 0;
@@ -54,4 +56,32 @@ input[type="password"]{
 
 input[type="email"]:focus, input[type="password"]:focus{
     box-shadow: 0px 8px 7px rgba(12, 12, 12, 0.603);
+}
+
+@media(max-width:900px){
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height:100%;
+
+        & .cadastro1{
+            display: flex;
+            justify-content: center;
+            height: 100dvh;
+        }
+    }
+}
+
+@media(max-width: 500px){
+    main .propaganda .caixapropaganda h1{
+        font-size: 3rem;
+    }
+
+     main .propaganda .caixapropaganda h2{
+        font-size: 2rem;
+    }
+
+    main .cadastro1{
+        padding: 10px 0;
+    }
 }
