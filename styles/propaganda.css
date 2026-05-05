@@ -29,5 +29,18 @@ main .propaganda{
         & img{
             scale: 3;
         }
+
+        & footer{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+
+            & p{
+                width: max-content;
+                font-size: 0.8rem;
+            }
+        }
+
     }
 }
