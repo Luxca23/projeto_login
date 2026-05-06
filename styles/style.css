@@ -37,7 +37,7 @@ input[type="email"]{
         color:rgba(245, 222, 179, 0.377);
     }
 
-    &:invalid{
+    &:user-invalid{
         border: 1px solid rgb(204, 0, 0, 0.450)
     }
 
